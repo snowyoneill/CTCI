@@ -1,0 +1,5 @@
+cl.exe /Od /D "_MBCS" /Gm /EHsc /RTC1 /MDd /Fo"Debug\\" /Fd"Debug\vc90.pdb" /W3 /nologo /c /ZI /TP /errorReport:prompt 5.1.cpp
+
+link.exe ws2_32.lib mpichd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /out:"5.1.exe" /pdbtype:sept /libpath:"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Lib" 5.1.obj
+
+/OUT:"5.1.exe" /NOLOGO /MANIFEST /MANIFESTFILE:"Debug\5.1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\Users\THoR\Desktop\CV\CrackingTheCodingInterview\Debug\5.1.pdb" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /ERRORREPORT:PROMPT kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
